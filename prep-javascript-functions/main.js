@@ -13,7 +13,8 @@ var hour = convertHoursToMinutes(2);
 console.log('hour', hour);
 
 function getGreeting(name) {
-  var result = 'Hello' + name + '!';
+  var result = 'Hello ' + name + '!';
+
   return result;
 }
 
@@ -49,11 +50,14 @@ var radius = getCircleCircumference(5);
 console.log('radius', radius);
 
 function getFullName(firstName, lastName) {
-  return 'Nicholas Fernandez';
+
+  var result = firstName + ' ' + lastName;
+  return result;
 }
 
-var fullName = getFullName;
-console.log('fullName', fullName);
+var fullName = getFullName('Nicholas', 'Fernandez');
+console.log('fullName:', fullName);
+
 
 function cube(number) {
   return (number * number * number);
