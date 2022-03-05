@@ -14,6 +14,7 @@ console.log('hour', hour);
 
 function getGreeting(name) {
   var result = 'Hello ' + name + '!';
+
   return result;
 }
 
@@ -49,12 +50,14 @@ var radius = getCircleCircumference(5);
 console.log('radius', radius);
 
 function getFullName(firstName, lastName) {
+
   var result = firstName + ' ' + lastName;
   return result;
 }
 
 var fullName = getFullName('Nicholas', 'Fernandez');
 console.log('fullName:', fullName);
+
 
 function cube(number) {
   return (number * number * number);
